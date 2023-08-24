@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title> 
+  <link rel="stylesheet" href="../CSS/Contact.css">
+  <link rel="stylesheet" href="../CSS/Home.css">
+  <style>
+     /* inline css */
+       #active 
+      {
+           color:#0ef;
+      }
+  </style>
+</head>
+<body>
+      
+         <!-- code for nav bar -->
+         <nav class="navbar">
+            <!-- nav-brand code -->
+            <div class="logo">
+                <a href="#">Portfolio.</a>
+            </div>
+            <!-- nav link ul li  -->
+            <ul class="nav-links" id="navLinks">
+                <li><a href="./Home.html" style="--i:1;">Home</a></li>
+                <li><a href="./Skills.html"  style="--i:2;">Skills</a></li>
+                <li><a href="./Project.html"  style="--i:3;">Project</a></li>
+                <li><a  id="active" href="./Contact.html"  style="--i:4;">Contact</a></li>
+           </ul>
+           <!-- responsive button -->
+           <div class="burger" id="burger" onclick="toggleNav()">
+               <div class="line1"></div>
+               <div class="line2"></div>
+               <div class="line3"></div>
+           </div>
+      </nav> 
+ 
+      <div class="content">
+           <div class="Skill-page">
+               <h2>Contact <span style="color:#0ef;">Me !</span></h2>
+           </div>
+           <div class="form-page">
+                 <form action="">
+                     <input type="text" placeholder="Full Name" pattern="[a-zA-Z]*" oninvalid="setCustomValidity('Please enter on alphabets only. ')" required>
+                     <input type="email" placeholder="Email" required>
+                     <input type="number" placeholder="Mobile Number"  max="10" title="Please valid Phone Number required" required> 
+                     <input type="text" placeholder="Subject"  pattern="[a-zA-Z]*" oninvalid="setCustomValidity('Please enter on alphabets only. ')" required>
+                     <textarea name="textarea" placeholder="Your Message"></textarea>
+                     <input type="submit"  onsubmit="Submit()">  
+                 </form>
+           </div>
+        </div>   
+        <script src="../JS/script.js"></script>
+</body>
+</html>

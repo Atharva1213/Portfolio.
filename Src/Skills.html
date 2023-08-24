@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <link rel="stylesheet" href="../CSS/Skills.css">
+    <link rel="stylesheet" href="../CSS/Home.css"> 
+    <style>
+
+        /* inline  css */
+           .active 
+      {
+           color:#0ef;
+      }
+    </style>
+</head>
+
+<body>
+
+     
+    <nav class="navbar">
+        <!-- nav-brand code -->
+        <div class="logo">
+            <a href="#">Portfolio.</a>
+        </div>
+        <!-- nav link ul li  -->
+        <ul class="nav-links" id="navLinks">
+            <li><a href="./Home.html" style="--i:1;">Home</a></li>
+            <li><a href="./Skills.html"  style="--i:2;">Skills</a></li>
+            <li><a href="./Project.html"  style="--i:3;">Project</a></li>
+            <li><a  id="active" href="./Contact.html"  style="--i:4;">Contact</a></li>
+       </ul>
+       <!-- responsive button -->
+       <div class="burger" id="burger" onclick="toggleNav()">
+           <div class="line1"></div>
+           <div class="line2"></div>
+           <div class="line3"></div>
+       </div>
+  </nav>
+    <div class="content">
+       <!-- Header part of Skills page -->
+   <div class="Skill-page">
+    <h2> My <span style="color:#0ef;">Skills</span></h2>
+   </div>
+  <!-- Main part  of Project page  -->
+    <div class="skills"> 
+          <!-- Big Div inside small Div -->
+        <div class="skill-category">
+            <h3>Programming Languages</h3>
+            <ul>
+                <li>Java <span class="skill-level">Intermediate</span></li>
+                <li>C <span class="skill-level">Advanced</span></li>
+                <li>C++ <span class="skill-level">Advanced</span></li>
+            </ul>
+        </div>
+         <!-- Big Div inside small Div -->
+        <div class="skill-category">
+            <h3>Web Development</h3>
+            <ul>
+                <li>HTML5 <span class="skill-level">Advanced</span></li>
+                <li>CSS3 <span class="skill-level">Advanced</span></li>
+                <li>JavaScript<span class="skill-level">Advanced</span></li>
+            </ul>
+        </div>
+         <!-- Big Div inside small Div -->
+        <div class="skill-category">
+            <h3>Frame-Works</h3>
+            <ul>
+                <li>React.Js <span class="skill-level">Advanced</span></li>
+                <li>Tailwind<span class="skill-level">Advanced</span></li>
+                <li>Material-UI<span class="skill-level">Advanced</span></li>
+            </ul>
+        </div>
+         <!-- Big Div inside small Div -->
+        <div class="skill-category">
+            <h3>Backend-Tools</h3>
+            <ul>
+                <li>Node.Js <span class="skill-level">Advanced</span></li>
+                <li>Express.Js<span class="skill-level">Advanced</span></li>
+                <li>Php<span class="skill-level">Advanced</span></li>
+            </ul>
+        </div>
+    </div>
+    </div>
+</div>
+<script src="../JS/script.js">
+    
+</script>
+</body>
+</html>

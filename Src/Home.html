@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="../CSS/Home.css">
+  <title>Home page</title>
+  <style>
+   /* inline css */
+      #active 
+      {
+           color:#0ef;
+      }
+  </style>
+</head>
+<body>
+
+       <!-- code for nav bar -->
+      <nav class="navbar">
+           <!-- nav-brand code -->
+           <div class="logo">
+               <a href="#">Portfolio.</a>
+           </div>
+           <!-- nav link ul li  -->
+           <ul class="nav-links" id="navLinks">
+               <li><a id="active" href="#" style="--i:1;">Home</a></li>
+               <li><a href="./Skills.html"  style="--i:2;">Skills</a></li>
+               <li><a href="./Project.html"  style="--i:3;">Project</a></li>
+               <li><a href="./Contact.html"  style="--i:4;">Contact</a></li>
+          </ul>
+          <!-- responsive button -->
+          <div class="burger" id="burger" onclick="toggleNav()">
+              <div class="line1"></div>
+              <div class="line2"></div>
+              <div class="line3"></div>
+          </div>
+     </nav> 
+
+     <!-- home content display -->
+    <div class="content">
+          <!-- wrapper div -->
+         <div class="home" id="content">
+               <!-- main div -->
+              <div class="image-content">
+                  <!-- image div content -->
+                   <img src="../Image/Atharva.jpeg" alt="error">
+              </div>
+            
+              <div class="home1" >
+                   <!-- home div open -->
+                   <h3 id="home-first">Hello,Its Me</h3>
+                   <h1>Atharva lende</h1> 
+                   <h3 class="home12">And I' am <br class="breakline"><span class="spc-text">Full Stack Developer</span></h3>
+                   <p>Some text to enable scrolling.. Lorem ipsum dolor sit  causae gloriatur ius te, id agam omnis . Inciderint efficia</p>
+                <div class="social-button"> 
+                    <!-- social media link  -->
+                   <a href="https://www.instagram.com/_shreelende_/"  target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                   <a href="https://www.github.com/Atharva1213" target="_blank"><i class="fa-brands fa-github"></i></a>
+                   <a href="https://www.linkedin.com/in/atharva-lende-65813122a"  target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                   <a href="mailto:lendeatharva30@gmail.com"  target="_blank"><i class="fa-solid fa-envelope"></i></a>
+               </div>
+        
+                <!-- Download button for resume  -->
+              <div class="button-resume" id="Button">
+                 <button type="button"><span class="span-download"><i class="fa-solid fa-download"></i>  </span><a href="../File/Atharva_lende_+919168582807.pdf" download="Atharva_lende_9168582807.pdf" >Download Resume</a></button>
+              </div> 
+        </div> 
+     </div>
+  </div>
+  <script src="../JS/script.js"></script>
+</body>
+</html>
